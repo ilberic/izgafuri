@@ -9,6 +9,10 @@
             width: 300px
             margin-top: 90px
             cursor: pointer
+            overflow: hidden
+            transition: all 1s
+            &:hover
+                transform: scale(1.1)
 .slider
     margin: 0 auto
     margin-top: 131px
@@ -34,6 +38,8 @@
         &:nth-child(3)
             background: url(../img/slider/3.jpg) center center/cover no-repeat
         &:hover
+            transform: scale(1.01)
+            
             .slider__img_text
                 opacity: 1
                 width: 100%
