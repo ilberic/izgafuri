@@ -1,0 +1,62 @@
+.portfolio
+    background: url(../img/bg/portfolio_bg.jpg) center center/cover no-repeat
+    padding: 100px 0 100px 0
+    &__wrapper
+        display: flex
+        justify-content: space-around
+        align-items: center
+        &_item
+            width: 300px
+            margin-top: 90px
+            cursor: pointer
+.slider
+    margin: 0 auto
+    margin-top: 131px
+    width: 1000px
+    height: 562px
+    position: relative  
+    .slider__img_text
+        opacity: 0
+        color: #fff
+        background-color: rgba(1,1 ,1 , 0.5 )
+        text-align: center
+        transition: all 2s
+        position: absolute
+        bottom: 20px
+    &__img
+        width: 100%
+        height: 562px
+        transition: all 2s
+        &:nth-child(1)
+            background: url(../img/slider/1.jpg) center center/cover no-repeat
+        &:nth-child(2)
+            background: url(../img/slider/2.jpg) center center/cover no-repeat
+        &:nth-child(3)
+            background: url(../img/slider/3.jpg) center center/cover no-repeat
+        &:hover
+            .slider__img_text
+                opacity: 1
+                width: 100%
+                color: #ced7d8;
+
+                   
+.prev
+    position: absolute
+    left: -100px
+    top: 50%
+    transform: translateY(-50%)
+    cursor: pointer
+    transition: 2s all
+    &:hover
+        left: -120px
+.next
+    position: absolute
+    right: -100px
+    top: 50%
+    transform: translateY(-50%)
+    cursor: pointer
+    transition: 2s all
+    &:hover
+        right: -120px
+
+    
