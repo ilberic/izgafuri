@@ -1,6 +1,11 @@
 .advantages
-    background: url(../img/bg/advantages_bg.png) center center/cover no-repeat
     padding: 76px 0 135px 0
+    background: url(../img/bg/advantages_bg.png) center center/cover no-repeat
+    position: relative
+    overflow: hidden
+    &:hover
+        .advantages__img
+            opacity: 1
     &__wrapper
         display: flex
         flex-direction: column
@@ -22,3 +27,11 @@
         color: #000000
         font-size: 20px
         font-weight: 300
+    &__img
+        position: absolute
+        bottom: 0
+        right: -100px
+        z-index: -1
+        opacity: 0
+        transition: 1.3s all
+

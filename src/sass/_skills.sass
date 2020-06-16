@@ -1,6 +1,13 @@
 .skills
     background: url(../img/bg/skills_bg.jpg) center center/cover no-repeat
-    padding: 98px 0 150px 0
+    padding: 90px 0 110px 0
+    &:hover
+        .title_black
+            &::after
+                opacity: 1
+                width: 50%
+        .skills__wrapper_item
+            opacity: 1
     &__subtitle
         font-size: 26px
         font-weight: 500
@@ -11,12 +18,21 @@
         display: flex
         justify-content: space-between
         align-items: center
-        margin-top: 150px
+        margin-top: 110px
         &_item
             display: flex
             flex-direction: column
             justify-content: space-between
             align-items: center
+            opacity: 0
+            &:nth-child(1)
+                transition: 0.6s all
+            &:nth-child(2)
+                transition: 1s all
+            &:nth-child(3)
+                transition: 1.4s all
+            &:nth-child(4)
+                transition: 1.8s all
             img
                 width: 150px
                 height: 150px
@@ -25,4 +41,3 @@
         font-size: 20px
         font-weight: 700
         text-align: center
-        margin-top: 20px

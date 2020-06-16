@@ -14,11 +14,11 @@
         <nav>
             <div class="container">
                 <ul class="nav__menu">
-                    <li class="nav__item"><a href="#">О нас</a></li>
-                    <li class="nav__item"><a href="#">Услуги</a></li>
+                    <li class="nav__item"><a href="#adv">О нас</a></li>
+                    <li class="nav__item"><a href="#skill">Услуги</a></li>
                     <li class="nav__item"><a href="#"><img src="icons/logo.svg" alt="" class="nav__logo"></a></li>
-                    <li class="nav__item"><a href="#">Портфолио</a></li>
-                    <li class="nav__item"><a href="#">Контакты</a></li>
+                    <li class="nav__item"><a href="#port">Портфолио</a></li>
+                    <li class="nav__item"><a href="#cont">Контакты</a></li>
                 </ul>
             </div>
         </nav>
@@ -32,7 +32,7 @@
     </header>
     <section class="advantages">
         <div class="container">
-            <div class="title title_left">
+            <div class="title title_left" id="adv">
                 Преимущества работы с <br> нами:
             </div>
             <div class="advantages__wrapper">
@@ -59,10 +59,11 @@
                 </div>
             </div>
         </div>
+        <img src="img/sculpture.png" alt="sculpture" class="advantages__img">
     </section>
     <section class="skills">
         <div class="container">
-            <div class="title title_black">Мы молодая амбициозная команда</div>
+            <div class="title title_black" id="skill">Мы - молодая амбициозная команда</div>
             <div class="skills__subtitle">
                 Мы работаем с 2013 года, нами выполнено более 500 проектов. Мы гордимся своей работой. Сотрудничаем со многими архитекторами, строительными и девелоперскими компаниями, а так же рекламными агентствами по всей стране. Почти все наши заказчики стали нашими постоянными клиентами, а некоторые  даже друзьями. Мы можем:
             </div>
@@ -74,31 +75,36 @@
             </div>
         </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="port">
         <div class="container">
             <div class="title title_black">ПОРТФОЛИО РАБОТ:</div>
             <div class="portfolio__wrapper">
-                <img src="img/portfolio/portfolio1.png" alt="interior" class="portfolio__wrapper_item">
-                <img src="img/portfolio/portfolio2.png" alt="outword" class="portfolio__wrapper_item">
-                <img src="img/portfolio/portfolio3.png" alt="furniture" class="portfolio__wrapper_item">
-                <img src="img/portfolio/portfolio4.png" alt="3D" class="portfolio__wrapper_item">
+                <a href="#slider"><img src="img/portfolio/portfolio1.png" alt="interior" class="portfolio__wrapper_item"></a>
+                <a href="#slider"><img src="img/portfolio/portfolio2.png" alt="outword" class="portfolio__wrapper_item"></a>
+                <a href="#slider"><img src="img/portfolio/portfolio3.png" alt="furniture" class="portfolio__wrapper_item"></a>
+                <a href="#slider"><img src="img/portfolio/portfolio4.png" alt="3D" class="portfolio__wrapper_item"></a>
             </div>
+            <hr id="slider">
             <div class="slider">
                 <div class="slider__screen">
                     <div class="slider__img show">
-                        <div class="slider__img_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione sapiente voluptatum excepturi debitis quisquam eaque corporis porro nostrum autem hic aut eveniet atque modi, sequi, molestias tempora ipsum? Esse, in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae obcaecati sed dolorum architecto amet. Voluptates incidunt cupiditate explicabo numquam earum voluptas odio placeat quia, obcaecati ipsum provident nam! Sequi, non?</div>
+                        <div class="slider__img_text"><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione sapiente voluptatum excepturi debitis quisquam eaque corporis porro nostrum autem hic aut eveniet atque modi, sequi, molestias tempora ipsum? Esse, in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae obcaecati sed dolorum architecto amet. Voluptates incidunt cupiditate explicabo numquam earum voluptas odio placeat quia, obcaecati ipsum provident nam! Sequi, non?</span></div>
                     </div>
                     <div class="slider__img hide">
-                        <div class="slider__img_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed non magnam est esse ipsam ullam. Ipsum, voluptas repellendus! Deserunt reiciendis dolores consequatur perferendis, odit voluptatibus placeat magni nesciunt. Nemo, laborum.</div>
+                        <div class="slider__img_text"><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione sapiente voluptatum excepturi debitis quisquam eaque corporis porro nostrum autem hic aut eveniet atque modi, sequi, molestias tempora ipsum? Esse, in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae obcaecati sed dolorum architecto amet. Voluptates incidunt cupiditate explicabo numquam earum voluptas odio placeat quia, obcaecati ipsum provident nam! Sequi, non?</span></div>
                     </div>
                     <div class="slider__img hide">
-                        <div class="slider__img_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eius cupiditate consequatur possimus quaerat impedit nostrum culpa ducimus iure ea, vel dolorem sed molestias vero obcaecati assumenda omnis voluptas illum!</div>
+                        <div class="slider__img_text"><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione sapiente voluptatum excepturi debitis quisquam eaque corporis porro nostrum autem hic aut eveniet atque modi, sequi, molestias tempora ipsum? Esse, in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae obcaecati sed dolorum architecto amet. Voluptates incidunt cupiditate explicabo numquam earum voluptas odio placeat quia, obcaecati ipsum provident nam! Sequi, non?</span></div>
                     </div>
                 </div>
                 <img src="icons/arrow_left.png" class="prev">
                 <img src="icons/arrow_right.png" class="next">
             </img>
         </div>
+    </section>
+    <section class="contacts" id="cont">
+
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6f487c3d1a375528ca428ebbf4e8d625423009b43e855579db4d9f58fc9ef3a1&amp;width=100%25&amp;height=468&amp;lang=ru_RU&amp;scroll=true"></script>
     </section>
     <script src="js/script.js"></script>
 </body>
