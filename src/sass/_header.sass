@@ -44,6 +44,133 @@ nav
         span
             font-weight: 700
             font-size: 25px
+.form-wrapper 
+    box-sizing: border-box
+    width: 100%
+    max-width: 460px
+    margin: 0 auto
+    display: flex
+    align-items: center
+    justify-content: center
+    background: rgba(251, 251, 251, 0.2)
+    padding: 30px
+    border-radius: 5px
+
+
+.contact-form 
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 9999
+    box-sizing: border-box
+    width: 100%
+    max-width: 400px
+    background: #CED7D8
+    padding: 0 30px 30px
+    box-shadow: 0 3px 35px rgba(0, 0, 0, .1)
+    border-radius: 2px
+    opacity: 0
+    display: none
+    overflow: hidden
+.shad
+    width: 100em
+    height: 100em
+    opacity: 0.7
+    position: fixed
+    top: 0
+    background-color: black
+    z-index: 0
+    display: none
+.close
+    width: 30px
+    height: 30px
+    float: right
+    position: relative
+    cursor: pointer
+    &:before
+        position: absolute
+        top: 3px
+        right: -10px
+        content: ''
+        height: 22px
+        width: 3px
+        background-color: black
+        transform: rotate(45deg)
+    &:after
+        position: absolute
+        top: 3px
+        right: -10px
+        content: ''
+        height: 22px
+        width: 3px
+        background-color: black
+        transform: rotate(-45deg)
+
+
+.contact-form__title 
+    margin: 0 -30px 30px
+    padding: 15px 30px
+    width: calc(100% + 60px)
+    line-height: 1.5
+    text-align: center
+    font-size: 20px
+    font-weight: 700
+    text-transform: uppercase
+    color: #000
+    background: url('../img/bg.png') top left repeat, #7FE7DC
+    color: #201E20
+
+
+.contact-form__description 
+    display: none
+    text-align: center
+    font-size: 18px
+
+
+.contact-form__input-wrapper 
+    margin-bottom: 20px
+
+
+.contact-form__input 
+    width: 100%
+    height: 50px
+    padding: 0 15px
+    box-sizing: border-box
+    border: 1px solid #e2e2e2
+    background: #fbfbfb
+    border-radius: 5px
+    font-size: 16px
+
+
+.contact-form__error 
+    font-size: .875rem
+
+
+.contact-form__button 
+    background: #F47A60
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100%
+    max-width: 240px
+    margin: 30px auto 0
+    border-radius: 5px
+    height: 50px
+    color: #fff
+    text-transform: uppercase
+    font-size: 16px
+    font-weight: 700
+    border: none
+    cursor: pointer
+    outline: none
+    transition: .3s
+
+
+.contact-form__button:hover 
+    transition: .3s
+    background: #b46e5e
+
     
 
                     

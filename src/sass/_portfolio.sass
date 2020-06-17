@@ -1,6 +1,9 @@
 .portfolio
     background: url(../img/bg/portfolio_bg.jpg) center center/cover no-repeat
     padding: 100px 0 100px 0
+    &:hover
+        .portfolio__wrapper_item
+            opacity: 1
     &__wrapper
         display: flex
         justify-content: space-around
@@ -11,6 +14,7 @@
             cursor: pointer
             overflow: hidden
             transition: all 1s
+            opacity: 0
             &:hover
                 transform: scale(1.1)
     hr

@@ -67,5 +67,19 @@ window.addEventListener('DOMContentLoaded', () => {
     }, animationTime / framesCount);
     });
     });
-
+    //modal window
+    let modalBtn = document.querySelector('.btn'),
+        modalForm = document.querySelector('.contact-form'),
+        close = document.querySelector('.close'),
+        shadow = document.querySelector('.shad');
+    modalBtn.addEventListener('click', () => {
+        modalForm.style.opacity = '1';
+        modalForm.style.display = 'block';
+        shadow.style.display = "block";
+    });
+    close.addEventListener('click', () => {
+        modalForm.style.opacity = '0';
+        modalForm.style.display = 'none';
+        shadow.style.display = "none";
+    });
 });

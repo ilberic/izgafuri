@@ -6,10 +6,26 @@
 @import 'advantages'
 @import 'skills'
 @import 'portfolio'
-@import 'portfolio'
+@import 'footer'
 body
     background-color: #ced7d8
+hr
+    height: 2px
+    background-color: black
+    border: none
+    margin: 0
+    box-shadow: 0 0 10px black
 .show
     display: block
 .hide
     display: none
+.head
+    position: fixed
+    right: 10px
+    top: 90%
+    width: 50px
+    transition: 1s all
+    z-index: 9999
+    &:hover
+        transform: scale(1.2)
+    

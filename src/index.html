@@ -10,7 +10,7 @@
     <title>IZGAFURI</title>
 </head>
 <body>
-    <header>
+    <header id ="head">
         <nav>
             <div class="container">
                 <ul class="nav__menu">
@@ -21,6 +21,7 @@
                     <li class="nav__item"><a href="#cont">Контакты</a></li>
                 </ul>
             </div>
+            <a href="#head" class="head"><img src="icons/anchor.svg" alt="anchor"></a>
         </nav>
         <div class="container">
             <div class="promo">
@@ -29,7 +30,30 @@
                 <button class="btn">Оставить заявку</button>
             </div>
         </div>
+        <div class="shad"></div>
+        <form class="contact-form" id="contact-form_1" method="POST" enctype="multipart/form-data">
+            <div class="close"></div>
+            <p class="contact-form__title">Оставьте заявку на расчет стоимости</p>
+            <p class="contact-form__description"></p>
+            <div class="contact-form__input-wrapper">
+              <input name="name" type="text" class="contact-form__input contact-form__input_name" placeholder="Введите ваше имя">
+              <div class="contact-form__error contact-form__error_name"></div>
+            </div>
+                       
+            <div class="contact-form__input-wrapper">
+              <input name="tel" type="tel" class="contact-form__input contact-form__input_tel" placeholder="Введите ваш телефон">
+              <div class="contact-form__error contact-form__error_tel"></div>
+            </div>
+           
+            <div class="contact-form__input-wrapper"> 
+               <input name="email" type="email" class="contact-form__input contact-form__input_email" placeholder="Введите ваш email">
+               <div class="contact-form__error contact-form__error_email"></div>
+            </div>
+           
+            <button class="contact-form__button" type="submit"> Оставить заявку </button>
+          </form>
     </header>
+    <hr>
     <section class="advantages">
         <div class="container">
             <div class="title title_left" id="adv">
@@ -61,6 +85,7 @@
         </div>
         <img src="img/sculpture.png" alt="sculpture" class="advantages__img">
     </section>
+    <hr>
     <section class="skills">
         <div class="container">
             <div class="title title_black" id="skill">Мы - молодая амбициозная команда</div>
@@ -75,6 +100,7 @@
             </div>
         </div>
     </section>
+    <hr>
     <section class="portfolio" id="port">
         <div class="container">
             <div class="title title_black">ПОРТФОЛИО РАБОТ:</div>
@@ -102,10 +128,28 @@
             </img>
         </div>
     </section>
-    <section class="contacts" id="cont">
-
-        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6f487c3d1a375528ca428ebbf4e8d625423009b43e855579db4d9f58fc9ef3a1&amp;width=100%25&amp;height=468&amp;lang=ru_RU&amp;scroll=true"></script>
-    </section>
+    <hr>
+    <footer class="footer" >
+       <div class="container">
+            <div class="title title_black" id="cont">НАШИ КОНТАКТЫ:</div>
+            <div class="contact__wrapper">
+                <a href="tel:89874925921" class="contact__wrapper_item">
+                    <img src="icons/phone.svg" alt="phone">
+                    <span>+89874925921</span>
+                </a>
+                <a href="mailto:clsdlsdldl@glalslas.ru" class="contact__wrapper_item">
+                    <img src="icons/phone.svg" alt="phone">
+                    <span>clsdlsdldl@glalslas.ru</span>
+                </a>
+            </div>
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6f487c3d1a375528ca428ebbf4e8d625423009b43e855579db4d9f58fc9ef3a1&amp;width=100%25&amp;height=468&amp;lang=ru_RU&amp;scroll=true"></script>
+            <div class="footer__wrapper">
+                <div class="footer__wrapper_item">by Belyaev Vadim</div>
+                <div class="footer__wrapper_item">IZGAFURI</div>
+                <div class="footer__wrapper_item">2020</div>
+            </div>
+       </div>
+    </footer>
     <script src="js/script.js"></script>
 </body>
 </html>
