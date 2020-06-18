@@ -10,7 +10,9 @@
     <title>IZGAFURI</title>
 </head>
 <body>
-    <header id ="head" class="anchor">
+    <header id ="head" class="">
+        <div class="top"><img src="icons/arrow_up.svg" alt="down" class="top__img"></div>
+        <div class="down"><img src="icons/arrow_down.svg" alt="down" class="down__img"></div>
         <nav>
             <div class="container">
                 <ul class="nav__menu">
@@ -27,6 +29,7 @@
                 <h1 class="title">Архитектурная и интерьерная 3D визуализация:</h1>
                 <p class="promo__descr">Предлагаем услуги по компьютерной графике.<br><br> Вы недавно купили квартиру или дом, и теперь вам нужно красивое оформление и функциональное обустройство?<br><br> Вы хотите уникальную дизайнерскую мебель из хороших материалов?<br><br> Может вам нужно рекламное видео, ролик для презентации вашего товара, услуги или жилого комплекса?<br><br> Или же вы хотите построить дом и предварительно выбрав материалы, цвета, фасады, посмотреть каким он будет?<br><br> <span>Тогда вы обратились по адресу.</span></p>
                 <button class="btn">Оставить заявку</button>
+                
             </div>
         </div>
         <div class="shad"></div>
@@ -53,9 +56,9 @@
           </form>
     </header>
 
-    <section class="advantages anchor">
+    <section class="advantages" id="adv">
         <div class="container">
-            <div class="title title_left" id="adv">
+            <div class="title title_left" >
                 Преимущества работы с <br> нами:
             </div>
             <div class="advantages__wrapper">
@@ -81,13 +84,14 @@
                     </div>
                 </div>
             </div>
+            
         </div>
         <img src="img/sculpture.png" alt="sculpture" class="advantages__img">
     </section>
 
-    <section class="skills anchor">
+    <section class="skills" id="skill">
         <div class="container">
-            <div class="title title_black" id="skill">Мы - молодая амбициозная команда</div>
+            <div class="title title_black">Мы - молодая амбициозная команда</div>
             <div class="skills__subtitle">
                 Мы работаем с 2013 года, нами выполнено более 500 проектов. Мы гордимся своей работой. Сотрудничаем со многими архитекторами, строительными и девелоперскими компаниями, а так же рекламными агентствами по всей стране. Почти все наши заказчики стали нашими постоянными клиентами, а некоторые  даже друзьями. Мы можем:
             </div>
@@ -97,10 +101,11 @@
                 <div class="skills__wrapper_item"><img src="icons/service_icons/desk.svg" alt="desk"><span class="skills__descr">3D визуализацию <br>мебели</span></div>
                 <div class="skills__wrapper_item"><img src="icons/service_icons/sculpt.svg" alt="sculpt"><span class="skills__descr">3D моделирование и <br>скульптинг</span></div>
             </div>
+            
         </div>
     </section>
 
-    <section class="portfolio anchor" id="port">
+    <section class="portfolio " id="port">
         <div class="container">
             <div class="title title_black">ПОРТФОЛИО РАБОТ:</div>
             <div class="portfolio__wrapper">
@@ -109,76 +114,78 @@
                 <img src="img/portfolio/portfolio3.png" alt="furniture" class="portfolio__wrapper_item">
                 <img src="img/portfolio/portfolio4.png" alt="3D" class="portfolio__wrapper_item">
             </div>
-            <img src="icons/arrow_down.svg" alt="down" class="img__down">
+            
         </div>
     </section>
 
-    <section class="slider__wrapper">
-        <div class="slider tabContent anchor show">
-            <div class="slider__screen">
-                <div class="slider__img  show">
-                    <div class="slider__img_text"><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione sapiente voluptatum excepturi debitis quisquam eaque corporis porro nostrum autem hic aut eveniet atque modi, sequi, molestias tempora ipsum? Esse, in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae obcaecati sed dolorum architecto amet. Voluptates incidunt cupiditate explicabo numquam earum voluptas odio placeat quia, obcaecati ipsum provident nam! Sequi, non?</span></div>
+    <section class="slider__wrapper hide">
+        <div class="container">
+            <div class="slider tabContent  show">
+                <div class="slider__screen">
+                    <div class="slider__img  show">
+                        <div class="slider__img_text"><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione sapiente voluptatum excepturi debitis quisquam eaque corporis porro nostrum autem hic aut eveniet atque modi, sequi, molestias tempora ipsum? Esse, in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae obcaecati sed dolorum architecto amet. Voluptates incidunt cupiditate explicabo numquam earum voluptas odio placeat quia, obcaecati ipsum provident nam! Sequi, non?</span></div>
+                    </div>
+                    <div class="slider__img hide">
+                        <div class="slider__img_text"><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione sapiente voluptatum excepturi debitis quisquam eaque corporis porro nostrum autem hic aut eveniet atque modi, sequi, molestias tempora ipsum? Esse, in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae obcaecati sed dolorum architecto amet. Voluptates incidunt cupiditate explicabo numquam earum voluptas odio placeat quia, obcaecati ipsum provident nam! Sequi, non?</span></div>
+                    </div>
+                    <div class="slider__img hide">
+                        <div class="slider__img_text"><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione sapiente voluptatum excepturi debitis quisquam eaque corporis porro nostrum autem hic aut eveniet atque modi, sequi, molestias tempora ipsum? Esse, in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae obcaecati sed dolorum architecto amet. Voluptates incidunt cupiditate explicabo numquam earum voluptas odio placeat quia, obcaecati ipsum provident nam! Sequi, non?</span></div>
+                    </div>
                 </div>
-                <div class="slider__img hide">
-                    <div class="slider__img_text"><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione sapiente voluptatum excepturi debitis quisquam eaque corporis porro nostrum autem hic aut eveniet atque modi, sequi, molestias tempora ipsum? Esse, in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae obcaecati sed dolorum architecto amet. Voluptates incidunt cupiditate explicabo numquam earum voluptas odio placeat quia, obcaecati ipsum provident nam! Sequi, non?</span></div>
-                </div>
-                <div class="slider__img hide">
-                    <div class="slider__img_text"><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione sapiente voluptatum excepturi debitis quisquam eaque corporis porro nostrum autem hic aut eveniet atque modi, sequi, molestias tempora ipsum? Esse, in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae obcaecati sed dolorum architecto amet. Voluptates incidunt cupiditate explicabo numquam earum voluptas odio placeat quia, obcaecati ipsum provident nam! Sequi, non?</span></div>
-                </div>
+                <img src="icons/arrow_left.png" class="prev">
+                <img src="icons/arrow_right.png" class="next">  
             </div>
-            <img src="icons/arrow_left.png" class="prev">
-            <img src="icons/arrow_right.png" class="next">  
-        </div>
-        <div class="slider2 tabContent anchor hide">
-            <div class="slider2__screen2">
-                <div class="slider2__img2 show">
-                    <div class="slider2__img2_text2"><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione sapiente voluptatum excepturi debitis quisquam eaque corporis porro nostrum autem hic aut eveniet atque modi, sequi, molestias tempora ipsum? Esse, in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae obcaecati sed dolorum architecto amet. Voluptates incidunt cupiditate explicabo numquam earum voluptas odio placeat quia, obcaecati ipsum provident nam! Sequi, non?</span></div>
+            <div class="slider2 tabContent  hide">
+                <div class="slider2__screen2">
+                    <div class="slider2__img2 show">
+                        <div class="slider2__img2_text2"><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione sapiente voluptatum excepturi debitis quisquam eaque corporis porro nostrum autem hic aut eveniet atque modi, sequi, molestias tempora ipsum? Esse, in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae obcaecati sed dolorum architecto amet. Voluptates incidunt cupiditate explicabo numquam earum voluptas odio placeat quia, obcaecati ipsum provident nam! Sequi, non?</span></div>
+                    </div>
+                    <div class="slider2__img2 hide">
+                        <div class="slider2__img2_text2"><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione sapiente voluptatum excepturi debitis quisquam eaque corporis porro nostrum autem hic aut eveniet atque modi, sequi, molestias tempora ipsum? Esse, in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae obcaecati sed dolorum architecto amet. Voluptates incidunt cupiditate explicabo numquam earum voluptas odio placeat quia, obcaecati ipsum provident nam! Sequi, non?</span></div>
+                    </div>
+                    <div class="slider2__img2 hide">
+                        <div class="slider2__img2_text2"><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione sapiente voluptatum excepturi debitis quisquam eaque corporis porro nostrum autem hic aut eveniet atque modi, sequi, molestias tempora ipsum? Esse, in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae obcaecati sed dolorum architecto amet. Voluptates incidunt cupiditate explicabo numquam earum voluptas odio placeat quia, obcaecati ipsum provident nam! Sequi, non?</span></div>
+                    </div>
                 </div>
-                <div class="slider2__img2 hide">
-                    <div class="slider2__img2_text2"><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione sapiente voluptatum excepturi debitis quisquam eaque corporis porro nostrum autem hic aut eveniet atque modi, sequi, molestias tempora ipsum? Esse, in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae obcaecati sed dolorum architecto amet. Voluptates incidunt cupiditate explicabo numquam earum voluptas odio placeat quia, obcaecati ipsum provident nam! Sequi, non?</span></div>
-                </div>
-                <div class="slider2__img2 hide">
-                    <div class="slider2__img2_text2"><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione sapiente voluptatum excepturi debitis quisquam eaque corporis porro nostrum autem hic aut eveniet atque modi, sequi, molestias tempora ipsum? Esse, in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae obcaecati sed dolorum architecto amet. Voluptates incidunt cupiditate explicabo numquam earum voluptas odio placeat quia, obcaecati ipsum provident nam! Sequi, non?</span></div>
-                </div>
+                <img src="icons/arrow_left.png" class="prev2">
+                <img src="icons/arrow_right.png" class="next2">  
             </div>
-            <img src="icons/arrow_left.png" class="prev2">
-            <img src="icons/arrow_right.png" class="next2">  
-        </div>
-        <div class="slider3 tabContent anchor hide">
-            <div class="slider3__screen3">
-                <div class="slider3__img3 show">
-                    <div class="slider3__img3_text3"><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione sapiente voluptatum excepturi debitis quisquam eaque corporis porro nostrum autem hic aut eveniet atque modi, sequi, molestias tempora ipsum? Esse, in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae obcaecati sed dolorum architecto amet. Voluptates incidunt cupiditate explicabo numquam earum voluptas odio placeat quia, obcaecati ipsum provident nam! Sequi, non?</span></div>
+            <div class="slider3 tabContent  hide">
+                <div class="slider3__screen3">
+                    <div class="slider3__img3 show">
+                        <div class="slider3__img3_text3"><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione sapiente voluptatum excepturi debitis quisquam eaque corporis porro nostrum autem hic aut eveniet atque modi, sequi, molestias tempora ipsum? Esse, in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae obcaecati sed dolorum architecto amet. Voluptates incidunt cupiditate explicabo numquam earum voluptas odio placeat quia, obcaecati ipsum provident nam! Sequi, non?</span></div>
+                    </div>
+                    <div class="slider3__img3 hide">
+                        <div class="slider3__img3_text3"><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione sapiente voluptatum excepturi debitis quisquam eaque corporis porro nostrum autem hic aut eveniet atque modi, sequi, molestias tempora ipsum? Esse, in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae obcaecati sed dolorum architecto amet. Voluptates incidunt cupiditate explicabo numquam earum voluptas odio placeat quia, obcaecati ipsum provident nam! Sequi, non?</span></div>
+                    </div>
+                    <div class="slider3__img3 hide">
+                        <div class="slider3__img3_text3"><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione sapiente voluptatum excepturi debitis quisquam eaque corporis porro nostrum autem hic aut eveniet atque modi, sequi, molestias tempora ipsum? Esse, in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae obcaecati sed dolorum architecto amet. Voluptates incidunt cupiditate explicabo numquam earum voluptas odio placeat quia, obcaecati ipsum provident nam! Sequi, non?</span></div>
+                    </div>
                 </div>
-                <div class="slider3__img3 hide">
-                    <div class="slider3__img3_text3"><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione sapiente voluptatum excepturi debitis quisquam eaque corporis porro nostrum autem hic aut eveniet atque modi, sequi, molestias tempora ipsum? Esse, in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae obcaecati sed dolorum architecto amet. Voluptates incidunt cupiditate explicabo numquam earum voluptas odio placeat quia, obcaecati ipsum provident nam! Sequi, non?</span></div>
-                </div>
-                <div class="slider3__img3 hide">
-                    <div class="slider3__img3_text3"><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione sapiente voluptatum excepturi debitis quisquam eaque corporis porro nostrum autem hic aut eveniet atque modi, sequi, molestias tempora ipsum? Esse, in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae obcaecati sed dolorum architecto amet. Voluptates incidunt cupiditate explicabo numquam earum voluptas odio placeat quia, obcaecati ipsum provident nam! Sequi, non?</span></div>
-                </div>
+                <img src="icons/arrow_left.png" class="prev3">
+                <img src="icons/arrow_right.png" class="next3">  
             </div>
-            <img src="icons/arrow_left.png" class="prev3">
-            <img src="icons/arrow_right.png" class="next3">  
-        </div>
-        <div class="slider4 tabContent anchor hide">
-            <div class="slider4__screen4">
-                <div class="slider4__img4 show">
-                    <div class="slider4__img4_text4"><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione sapiente voluptatum excepturi debitis quisquam eaque corporis porro nostrum autem hic aut eveniet atque modi, sequi, molestias tempora ipsum? Esse, in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae obcaecati sed dolorum architecto amet. Voluptates incidunt cupiditate explicabo numquam earum voluptas odio placeat quia, obcaecati ipsum provident nam! Sequi, non?</span></div>
+            <div class="slider4 tabContent  hide">
+                <div class="slider4__screen4">
+                    <div class="slider4__img4 show">
+                        <div class="slider4__img4_text4"><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione sapiente voluptatum excepturi debitis quisquam eaque corporis porro nostrum autem hic aut eveniet atque modi, sequi, molestias tempora ipsum? Esse, in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae obcaecati sed dolorum architecto amet. Voluptates incidunt cupiditate explicabo numquam earum voluptas odio placeat quia, obcaecati ipsum provident nam! Sequi, non?</span></div>
+                    </div>
+                    <div class="slider4__img4 hide">
+                        <div class="slider4__img4_text4"><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione sapiente voluptatum excepturi debitis quisquam eaque corporis porro nostrum autem hic aut eveniet atque modi, sequi, molestias tempora ipsum? Esse, in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae obcaecati sed dolorum architecto amet. Voluptates incidunt cupiditate explicabo numquam earum voluptas odio placeat quia, obcaecati ipsum provident nam! Sequi, non?</span></div>
+                    </div>
+                    <div class="slider4__img4 hide">
+                        <div class="slider4__img4_text4"><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione sapiente voluptatum excepturi debitis quisquam eaque corporis porro nostrum autem hic aut eveniet atque modi, sequi, molestias tempora ipsum? Esse, in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae obcaecati sed dolorum architecto amet. Voluptates incidunt cupiditate explicabo numquam earum voluptas odio placeat quia, obcaecati ipsum provident nam! Sequi, non?</span></div>
+                    </div>
                 </div>
-                <div class="slider4__img4 hide">
-                    <div class="slider4__img4_text4"><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione sapiente voluptatum excepturi debitis quisquam eaque corporis porro nostrum autem hic aut eveniet atque modi, sequi, molestias tempora ipsum? Esse, in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae obcaecati sed dolorum architecto amet. Voluptates incidunt cupiditate explicabo numquam earum voluptas odio placeat quia, obcaecati ipsum provident nam! Sequi, non?</span></div>
-                </div>
-                <div class="slider4__img4 hide">
-                    <div class="slider4__img4_text4"><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione sapiente voluptatum excepturi debitis quisquam eaque corporis porro nostrum autem hic aut eveniet atque modi, sequi, molestias tempora ipsum? Esse, in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae obcaecati sed dolorum architecto amet. Voluptates incidunt cupiditate explicabo numquam earum voluptas odio placeat quia, obcaecati ipsum provident nam! Sequi, non?</span></div>
-                </div>
+                <img src="icons/arrow_left.png" class="prev4">
+                <img src="icons/arrow_right.png" class="next4">  
             </div>
-            <img src="icons/arrow_left.png" class="prev4">
-            <img src="icons/arrow_right.png" class="next4">  
         </div>
     </section>
 
-    <footer class="footer anchor" >
+    <footer class="footer" id="cont">
        <div class="container">
-            <div class="title title_black" id="cont">НАШИ КОНТАКТЫ:</div>
+            <div class="title title_black" >НАШИ КОНТАКТЫ:</div>
             <div class="contact__wrapper">
                 <a href="tel:89874925921" class="contact__wrapper_item">
                     <img src="icons/phone.svg" alt="phone">
