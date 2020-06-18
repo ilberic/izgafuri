@@ -25,15 +25,6 @@ hr
     display: block
 .hide
     display: none
-.head
-    position: fixed
-    right: 10px
-    top: 90%
-    width: 50px
-    transition: 1s all
-    z-index: 9999
-    &:hover
-        transform: scale(1.2)
 .down
     background-color: #ffffff00
     cursor: pointer
@@ -41,11 +32,11 @@ hr
     position: fixed
     bottom: 20px    
     z-index: 9999
+    right: 0
     &__img
         height: 80px
         width: 80px
         display: block
-        float: right
         animation: 0.3s tremor ease-out infinite;
         &:hover
             animation: 0.1s tremor ease-out infinite;      
@@ -68,6 +59,8 @@ hr
     transition: 1s all
     position: fixed
     z-index: 9999
+    right: 0
+    top: 10px
     &__img
         height: 80px
         width: 80px

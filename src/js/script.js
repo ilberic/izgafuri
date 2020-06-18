@@ -1,4 +1,8 @@
 'use strict';
+$(window).scroll(function() {
+    var el = document.getElementsByTagName('body')[0];
+    el.style.overflow = 'hidden';
+    });
 window.addEventListener('DOMContentLoaded', () => {
     // slider
     function mySlider (imgPath, nextPath, prevPath)  {
@@ -155,9 +159,6 @@ window.addEventListener('DOMContentLoaded', () => {
           $('html, body').animate({
             scrollTop: movePos}, 600);
         });
-        $(window).scroll(function() {
-            var el = document.getElementsByTagName('body')[0];
-            el.style.overflow = 'hidden';
-            });
+        
             
 });
