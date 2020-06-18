@@ -1,9 +1,14 @@
 'use strict';
-$(window).scroll(function() {
-    var el = document.getElementsByTagName('body')[0];
-    el.style.overflow = 'hidden';
-    });
 window.addEventListener('DOMContentLoaded', () => {
+    new fullpage('#fullpage', {
+        //options here
+
+        autoScrolling:true,
+        scrollHorizontally: true,
+	    
+    });
+    //methods
+    fullpage_api.setAllowScrolling(true);
     // slider
     function mySlider (imgPath, nextPath, prevPath)  {
         let slideIndex = 1,
@@ -57,18 +62,16 @@ window.addEventListener('DOMContentLoaded', () => {
 
     function hideTabContent(a) {
         for (let i = a; i < tabContent.length; i++ ){
-            sliderWrapper.classList.add('hide');
             tabContent[i].classList.remove('show');
             tabContent[i].classList.add('hide');
             tabContent[i].classList.remove('anchor');
         }
     }
 
-    hideTabContent(0);
+    hideTabContent(1);
 
     function showTabContent(b) {
         if (tabContent[b].classList.contains('hide')){
-            sliderWrapper.classList.remove('hide');
             tabContent[b].classList.remove('hide');
             tabContent[b].classList.add('anchor');
             tabContent[b].classList.add('show');
@@ -113,52 +116,4 @@ window.addEventListener('DOMContentLoaded', () => {
         modalForm.style.display = 'none';
         shadow.style.display = "none";
     });
-    //block scroll
-    // var anchor = [];
-    // var currentAnchor = -1;
-    // var isAnimating  = false;
-    // $(function(){
-    //     function updateAnchors() {
-    //         anchor = [];
-    //         $('.anchor').each(function(i, element){
-    //             anchor.push( $(element).offset().top );
-    //         });
-    //     }
-    //     $('body').on('mousewheel', function(e){
-    //         e.preventDefault();
-    //         e.stopPropagation();
-    //         if( isAnimating ) {
-    //             return false;
-    //         }
-    //         isAnimating  = true;
-    //         if( e.originalEvent.wheelDelta >= 0 ) {
-    //             currentAnchor--;
-    //         }else{
-    //             currentAnchor++;
-    //         }
-    //         if( currentAnchor > (anchor.length - 1) 
-    //         || currentAnchor < 0 ) {
-    //             currentAnchor = 0;
-    //         }
-    //         isAnimating  = true;
-    //         $('html, body').animate({
-    //             scrollTop: parseInt( anchor[currentAnchor] )
-    //         }, 1000, 'swing', function(){
-    //             isAnimating  = false;
-    //         });
-    //     });
-    //     updateAnchors();   
-    // });
-        $('div').on('click', function() {
-          if ( $(this).hasClass('down') ) {
-            var movePos = $(window).scrollTop() + $(window).height();
-          }
-          if ( $(this).hasClass('top') ) {
-            var movePos = $(window).scrollTop() - $(window).height();
-          }
-          $('html, body').animate({
-            scrollTop: movePos}, 600);
-        });
-        
-            
 });

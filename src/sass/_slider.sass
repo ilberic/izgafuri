@@ -1,10 +1,10 @@
-.slider__wrapper
-    height: 100vh
 .slider
+    transform: translateY(50px)
     margin: 0 auto
     margin-top: 70px
-    width: 1000px
-    height: 562px
+    margin-bottom: 20px
+    max-width: 1000px
+    max-height: 562px
     position: relative  
     &__screen
         overflow: hidden
@@ -38,22 +38,27 @@
                 color: #ced7d8;              
 .prev
     position: absolute
-    left: -100px
+    left: -70px
+    max-height: 40px
     top: 50%
     transform: translateY(-50%)
     cursor: pointer
     transition: 2s all
     &:hover
-        left: -120px
+        max-height: 46px
+        
 .next
     position: absolute
-    right: -100px
+    right: -70px
+    max-height: 43px
     top: 50%
     transform: translateY(-50%)
     cursor: pointer
     transition: 2s all
     &:hover
-        right: -120px
+        max-height: 49px
+
+       
 .slider2
     margin: 0 auto
     margin-top: 70px

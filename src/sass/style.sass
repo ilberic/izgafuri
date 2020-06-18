@@ -8,11 +8,8 @@
 @import 'portfolio'
 @import 'footer'
 @import 'slider'
-html
-    height: 100%
 body
     background-color: #ced7d8
-    height: 100%
 hr
     height: 2px
     background-color: black
@@ -41,32 +38,3 @@ hr
         &:hover
             animation: 0.1s tremor ease-out infinite;      
 
-@keyframes tremor 
-    0%, 25% 
-        left: -1px;
-        -webkit-transform: translateX(-1%);
-    50%, 100% 
-        left: 1px;
-        -webkit-transform: translateX(1%);
-        transform: translateX(1%);
-    
-     
-       
-        
-.top
-    background-color: #ffffff00
-    cursor: pointer
-    transition: 1s all
-    position: fixed
-    z-index: 9999
-    right: 0
-    top: 10px
-    &__img
-        height: 80px
-        width: 80px
-        display: block
-        float: right
-        animation: 0.3s tremor ease-out infinite;
-        &:hover
-            animation: 0.1s tremor ease-out infinite;
-    
